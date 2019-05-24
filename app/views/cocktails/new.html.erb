@@ -1,9 +1,9 @@
 <div class="container">
   <h1>Cocktails#new</h1>
-
-  <%= simple_form_for @cocktail do |f| %>
-  <%= f.input :name %>
-  <%= f.button :submit %>
-  <% end %>
-
+    <div class='justify-content-center'>
+      <%= render 'form' %>
+    </div>
+      <div class="text-right">
+        <%= link_to "Cancel", cocktails_path %>
+      </div>
 </div>

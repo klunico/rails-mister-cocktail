@@ -1,2 +1,15 @@
-<h1>Doses#new</h1>
-<p>Find me in app/views/doses/new.html.erb</p>
+<div class="container">
+  <h1>Add a decription & ingredient to a cocktail</h1>
+  <div class="card text-center" style="height: 50px">
+    <%= @cocktail.name %>
+  </div>
+    <%= render 'form_for' %>
+  <div class="container">
+    <div>
+      <p>Can't find the right coktail? <%= link_to "Create cocktail", new_cocktail_path %></p>
+    </div>
+    <div class="text-right">
+    <%= link_to "Back to list", cocktails_path  %>
+    </div>
+  </div>
+</div>
